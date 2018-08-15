@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang='zh-cn'>
+<head>
+  <meta charset='utf-8'>
+  <title>王两岁—22岁生日快乐</title>
+ 
+<script type="text/javascript">
+function myFunction(){
+	var Thestr = new String("20170118");
+	var x=document.getElementById("pwd").value;
+	if(Thestr==document.getElementById("pwd").value)
+	{
+		var r=confirm("余生准备好跟我一起走下去了吗？");
+		if(r==true)
+		{
+			document.write("生日快乐，七夕快乐！爱你哦，（づ￣3￣）づ╭❤～");
+		}
+		else
+		{
+			document.write("啦啦啦~~~自动获取内心最真实的想法。。。<br><br>获取中。。。<br><br>获取成功。<br><br>正在跳转到《正确》选项<br><br>生日快乐，七夕快乐！爱你哦，（づ￣3￣）づ╭❤～");
+		}
+	}
+	else
+	{
+		alert("再仔细想想哦");
+	}
+}
+
+function refreshSiteRunningTime()
+{
+	var now = new Date();
+	var y = now.getFullYear();
+	var M = now.getMonth()+1;
+	var d = now.getDate();
+	var H = now.getHours();
+	var m = now.getMinutes();
+	var s = now.getSeconds();
+	
+	var startDate = Date.UTC(2017,01,18,0,0,0);
+	var intervalDate = new Date(now-startDate);
+	y = intervalDate.getFullYear()-1970;
+	M = intervalDate.getMonth();
+	d = intervalDate.getDate();
+	H = intervalDate.getHours();
+	m = intervalDate.getMinutes();
+	s = intervalDate.getSeconds();
+	
+	document.getElementById("site_running_time").innerText = y + "年" + (M > 10 ? M :'0' + M) + "月" + (H >= 10 ? H :'0' + H) + "时" + (m >= 10 ? m :'0' + m) + "分" + (s >= 10 ? s :'0' + s) + "秒";
+	setTimeout('refreshSiteRunningTime()',1000);
+}
+</script>
+  
+</head>
+<h1 align = "center" style = "font-family:verdana">Happy Birthday</h1>
+<hr />
+<h6 style = "font-family:verdana">
+<p>To:WJL</p>
+</h6>
+<h5 style = "background-color:white;font-family:arial;color:white;" align = "center" style = "font-family:verdana"> 
+	520<br>1314<br>
+	我爱你，一生一世
+</h5>
+<h6 align = "center" style = "font-family:verdana">
+
+<p>Birthday！&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Happy Birth</p>
+<p>ppy Birthday！Ha&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;day！Happy Birthd</p>
+<p>appy Birthday！Happy &nbsp;&nbsp;&nbsp;thday！Happy Birthday</p>
+<p>Happy Birthday！Happy Birthday！Happy Birthday！</p>
+<p>Happy Birthday！Happy Birthday！Happy Birthday！</p>
+<p>appy Birthday！Happy Birthday！Happy Birthday</p>
+<p>ppy Birthday！Happy Birthday！Happy Birthda</p>
+<p>py Birthday！Happy Birthday！Happy Birthd</p>
+<p>Birthday！Happy Birthday！Happy Birt</p>
+<p>rthday！Happy Birthday！Happy B</p>
+<p>day！Happy Birthday！Hap</p>
+<p>Happy Birthday！</p>
+<p>y Birt</p>
+
+</h6>
+
+<body align = "center" onload="refreshSiteRunningTime()">
+我们已经手牵手<br>
+<font color="#000000"><span id="site_running_time"></span></font>
+
+</body>
+
+<form align = "center">
+<br>
+我们在一起的那天（xxxx年xx月xx日）<br>
+GO TO MY HEART：<input type="password" id="pwd">
+<input type="button" value="I SURE" onclick="myFunction()">
+</form>
+
+
+<h6 align = "center" style = "font-family:verdana">
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr />
+<p>&copy LQG</p>
+
+</h6>
+
+
+</html>
